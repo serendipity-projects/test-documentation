@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>App.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Test documentation</a> &gt; <a href="index.source.html" class="el_package">it.serendigity.other</a> &gt; <span class="el_source">App.java</span></div><h1>App.java</h1><pre class="source lang-java linenums">package it.serendigity.other;
+
+import java.io.IOException;
+
+<span class="nc" id="L5">public class App {</span>
+
+	public static void main(String[] args) throws IOException {
+
+		// First initialize your smartphone using the model number and license key.
+<span class="nc" id="L10">		ACMESmartphone myACMESmartphone = new ACMESmartphone(2.0, &quot;398978fdskj&quot;);</span>
+
+		// Locate the roadrunner.
+<span class="nc" id="L13">		myACMESmartphone.findRoadRunner(&quot;Santa Clara&quot;,&quot;California&quot;);</span>
+
+		// Zap the roadrunner with the amount of voltage you want.
+<span class="nc" id="L16">		myACMESmartphone.zapRoadRunner(40);</span>
+
+<span class="nc" id="L18">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

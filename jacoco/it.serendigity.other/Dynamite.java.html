@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Dynamite.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Test documentation</a> &gt; <a href="index.source.html" class="el_package">it.serendigity.other</a> &gt; <span class="el_source">Dynamite.java</span></div><h1>Dynamite.java</h1><pre class="source lang-java linenums">package it.serendigity.other;
+
+/**
+ * Provides ways to explode dynamite to blow up roadrunners.
+ * &lt;p&gt;
+ *
+ * Try using the {@link ACMESmartphone#zapRoadRunner} before
+ * resorting to {@link #blowDynamiteLoudBang}. However, if you do have a lot of
+ * roadrunners, the {@code zapRoadRunner} method may not be
+ * efficient enough. You'll probably just want to resort to
+ * &lt;code&gt;blowDynamiteLoudBang()&lt;/code&gt; to annihilate them all at once.
+ */
+<span class="nc" id="L13">public class Dynamite {</span>
+
+	/**
+	 * Blows dynamite with a decibel level approximating that of a fog horn.
+	 * @param fuseLength  the length of the fuse on the stick of dynamite
+	 * @see #blowDynamiteSilentBang
+	 * @see ACMESmartphone#zapRoadRunner
+	 */
+	public void blowDynamiteLoudBang(int fuseLength) {
+<span class="nc" id="L22">		System.out.println(&quot;lighting fuse with length of &quot; + fuseLength + &quot;inches.&quot;);</span>
+<span class="nc" id="L23">		System.out.println(&quot;kabang!!! big explosion!!!&quot;);</span>
+<span class="nc" id="L24">	}</span>
+
+
+	/**
+	 * Blows dynamite with almost no sound at all (equivalent to a silencer on a gun).
+	 * @param fuseLength  the length of the fuse, which determines safety (silent bangs are just as deadly as loud bangs)
+	 * @see #blowDynamiteLoudBang
+	 * @see ACMESmartphone#zapRoadRunner
+	 */
+	public void blowDynamiteSilentBang(int fuseLength) {
+<span class="nc" id="L34">		System.out.println(&quot;lighting fuse with length of &quot; + fuseLength + &quot;inches.&quot;);</span>
+<span class="nc" id="L35">		System.out.println(&quot;&lt;silent boom&gt;. no one hears it.&quot;);</span>
+<span class="nc" id="L36">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
