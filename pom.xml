@@ -10,7 +10,7 @@
 		<version>0.2.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>it.serendigity.maven.plugins</groupId>
+	<groupId>it.serendigity.maven.example</groupId>
 	<artifactId>test-documentation</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -18,4 +18,45 @@
 	<name>Test documentation</name>
 	<description>Test publish automatic documentation with Maven</description>
 
+	<scm>
+		<url>https://github.com/serendipity-projects/${project.artifactId}</url>
+		<connection>scm:git:git://github.com/serendipity-projects/${project.artifactId}</connection>
+		<developerConnection>scm:git:git@github.com:serendipity-projects/${project.artifactId}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+
+	<profiles>
+		<!-- DEPLOY SITE PROFILE -->
+		<!-- ... LOCAL -->
+		<profile>
+			<id>site-local</id>
+
+			<distributionManagement>
+				<site>
+					<id>deploy-site-local</id>
+					<name>Site deployments</name>
+					<url>file://${site.deploy.rootdir}/${project.artifactId}/</url>
+
+
+				</site>
+			</distributionManagement>
+
+		</profile>
+
+		<!-- ... GITHUB -->
+		<profile>
+			<id>site-github</id>
+
+			<distributionManagement>
+				<site>
+					<id>deploy-site-github</id>
+					<name>Site deploy github</name>
+					<url>scm:git:https://git@github.com/serendipity-projects/${project.artifactId}/</url>
+				</site>
+			</distributionManagement>
+
+		</profile>
+
+	</profiles>
 </project>
